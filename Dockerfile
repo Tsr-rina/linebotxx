@@ -16,4 +16,4 @@ COPY requirements.txt /code/
 RUN pip3 install --upgrade pip 
 RUN pip3 install -r requirements.txt
 
-CMD ["uvicorn", "main:app", "--reload", "--host", "0.0.0.0", "--port", "8011"]
+CMD ["python", "main.py"]
