@@ -9,7 +9,7 @@ app = Flask(__name__)
 line_bot_api = LineBotApi(CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(CHANNEL_SECRET)
 
-@app.route("/", methods=['POST'])
+@app.route("/callback", methods=['POST'])
 def callback():
     # get X-Line-Signature header value
     signature = request.headers['X-Line-Signature']
@@ -36,4 +36,4 @@ def handle_message(event):
 
 
 if __name__ == "__main__":
-    app.run(debug=True, host='0.0.0.0', port='8011')
+    app.run(debug=True, host='0.0.0.0', port=8011)
