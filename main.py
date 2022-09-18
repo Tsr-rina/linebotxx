@@ -9,7 +9,7 @@ app = Flask(__name__)
 line_bot_api = LineBotApi(CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(CHANNEL_SECRET)
 
-@app.route("/", methods=['POST'])
+@app.route("/", methods=['GET','POST'])
 def test():
     return "OK"
 
