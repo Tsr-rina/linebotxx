@@ -1,9 +1,9 @@
-version: '3'
+version: "3"
 
 services:
-  app:
+  flask_app:
     build: .
-    volumes:
-      - .:/code
     ports:
-      - 8011:8011
+      - "8801:8801"
+    volumes:
+      - ./app:/code
