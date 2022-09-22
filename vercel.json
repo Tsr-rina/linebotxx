@@ -12,6 +12,6 @@
             "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Accept"
         },
         "src": "/.*",
-        "dest": "/app/main.py"
+        "dest": "/"
     }]
 }
